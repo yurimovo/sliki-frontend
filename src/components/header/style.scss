@@ -1,0 +1,12 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  //background-color: #858585;
+  background-image: url('../../assets/pictures/header-back.png');
+  border-bottom: 5px solid #000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 150px;
+}
