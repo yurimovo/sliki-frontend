@@ -7,9 +7,15 @@ import './style.scss';
 
 const Events = () => {
   return (
-    <div className="events__main">
-      <CurrentEvent />
-      <NextEvent />
+    <div className='container'>
+      <div className='events__main'>
+        <div className='events__current'>
+          <CurrentEvent />
+        </div>
+        <div className='events__next'>
+          <NextEvent />
+        </div>
+      </div>
     </div>
   );
 };

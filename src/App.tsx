@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import ForecastPage from './pages/forecast-page/ForecastPage';
 import MainPage from './pages/main-page/MainPage';
 import PersonalPage from './pages/personal-page/PersonalPage';
+import Calendar from './pages/calendar-page/Calendar';
 
 import './main-container.scss';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/forecast" element={<ForecastPage />} />
         <Route path="/personal" element={<PersonalPage />} />
+        <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </div>
   );

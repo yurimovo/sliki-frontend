@@ -14,12 +14,12 @@ const Menu = () => {
         </li>
         <li>
           <a href="#">
-            <Link to="/forecast">Сделать прогноз</Link>
+            <Link to="/personal">Мои прогнозы</Link>
           </a>
         </li>
         <li>
           <a href="#">
-            <Link to="/personal">Мои прогнозы</Link>
+            <Link to="/calendar">Календарь</Link>
           </a>
         </li>
       </ul>

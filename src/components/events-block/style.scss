@@ -1,11 +1,22 @@
 .events__main {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: #f2f0d8;
   border-radius: 8px;
   border: 3px groove #fdc91d;
   margin: 20px 20px 0 20px;
   height: 120px;
+  padding: 0 10px;
+}
+
+.events__current {
+  display: flex;
+  width: 60%;
+}
+
+.events__next {
+  display: flex;
+  width: 40%;
 }

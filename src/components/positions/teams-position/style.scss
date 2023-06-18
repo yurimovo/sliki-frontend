@@ -1,0 +1,29 @@
+.positions__teams {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px outset #fdc91d;
+    border-radius: 8px;
+    background-color: #000;
+    margin: 20px 0 20px 0;
+}
+
+.positions__teams__header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fdc91d;
+}
+
+.positions__teams__table ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.positions__teams__table li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 5px;
+}
