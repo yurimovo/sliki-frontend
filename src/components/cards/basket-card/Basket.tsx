@@ -6,7 +6,7 @@ import './style.scss';
 
 const Basket = () => {
   return (
-    <div>
+    <div className='basket-container'>
       <BasketItem />
     </div>
   );

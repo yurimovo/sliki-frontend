@@ -6,6 +6,7 @@ import ForecastPage from './pages/forecast-page/ForecastPage';
 import MainPage from './pages/main-page/MainPage';
 import PersonalPage from './pages/personal-page/PersonalPage';
 import Calendar from './pages/calendar-page/Calendar';
+import NewForecast from './pages/new-forecast/NewForecast';
 
 import './main-container.scss';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/forecast" element={<ForecastPage />} />
         <Route path="/personal" element={<PersonalPage />} />
         <Route path="/calendar" element={<Calendar />} />
+        <Route path='/new_forecast' element={<NewForecast />} />
       </Routes>
     </div>
   );

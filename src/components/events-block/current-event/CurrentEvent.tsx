@@ -4,6 +4,7 @@ import Flag from '../../../assets/pictures/flags/canada.jpg';
 
 import './style.scss';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const CurrentEvent = () => {
   return (
@@ -19,7 +20,7 @@ const CurrentEvent = () => {
         />
         <div className="current-event__event-content__event-date">16-18.06</div>
         <Button type="button" className="btn btn-success">
-          Сделать прогноз
+          <Link to="/new_forecast">Сделать прогноз</Link>
         </Button>
       </div>
     </div>
