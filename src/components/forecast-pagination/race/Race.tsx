@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Basket from '../../cards/basket-card/Basket';
+import Teams from '../../cards/teams/Teams';
 import Pilots from '../../cards/pilots/Pilots';
 
 import './style.scss';
@@ -10,7 +10,7 @@ const Race = () => {
     <>
       <div>Race</div>
       <div>
-        <Basket />
+        <Teams />
         <Pilots />
       </div>
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Basket from "../../components/cards/basket-card/Basket";
+import Teams from "../../components/cards/teams/Teams";
 import Pilots from "../../components/cards/pilots/Pilots";
 
 import "./style.scss"
@@ -10,7 +10,7 @@ const NewForecast = () => {
         <div className="container">
             <div className="row">
                 <div className="col-6">
-                    <Basket />
+                    <Teams />
                 </div>
                 <div className="col-6">
                     <Pilots />

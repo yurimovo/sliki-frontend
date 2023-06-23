@@ -2,8 +2,8 @@ import React from 'react';
 
 import './style.scss';
 
-const BasketItem = () => {
+const Team = () => {
   return <div>Basket Item</div>;
 };
 
-export default BasketItem;
+export default Team;

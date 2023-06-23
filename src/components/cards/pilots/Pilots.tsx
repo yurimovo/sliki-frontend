@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Pilot from './pilot/Pilot';
+import { Pilot } from './pilot/Pilot';
 
 import { PilotInList } from '../../../types/pilots';
 

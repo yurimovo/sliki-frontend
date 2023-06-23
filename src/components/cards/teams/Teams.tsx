@@ -1,15 +1,15 @@
 import React from 'react';
 
-import BasketItem from './basket-item/BasketItem';
+import Team from './team/Team';
 
 import './style.scss';
 
-const Basket = () => {
+const Teams = () => {
   return (
     <div className='basket-container'>
-      <BasketItem />
+      <Team />
     </div>
   );
 };
 
-export default Basket;
+export default Teams;
