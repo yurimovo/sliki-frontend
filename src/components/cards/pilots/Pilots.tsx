@@ -9,27 +9,29 @@ import './style.scss';
 
 const Pilots = () => {
   const [items, setItems] = useState<Array<PilotInList>>([
-    {id: 1, pilotName: 'VER', pilotNumber: '33'},
-    {id: 2, pilotName: 'PER', pilotNumber: '11'},
-    {id: 3, pilotName: 'LEC', pilotNumber: '16'},
-    {id: 4, pilotName: 'SAI', pilotNumber: '55'},
-    {id: 5, pilotName: 'HAM', pilotNumber: '44'},
-    {id: 6, pilotName: 'RUS', pilotNumber: '63'},
-    {id: 7, pilotName: 'OCO', pilotNumber: '31'},
-    {id: 8, pilotName: 'GAS', pilotNumber: '10'},
-    {id: 9, pilotName: 'PIA', pilotNumber: '28'},
-    {id: 10, pilotName: 'NOR', pilotNumber: '4'},
-    {id: 11, pilotName: 'BOT', pilotNumber: '77'},
-    {id: 12, pilotName: 'ZHO', pilotNumber: '24'},
-    {id: 13, pilotName: 'STR', pilotNumber: '18'},
-    {id: 14, pilotName: 'ALO', pilotNumber: '14'},
-    {id: 15, pilotName: 'MAG', pilotNumber: '20'},
-    {id: 16, pilotName: 'HUL', pilotNumber: '27'},
-    {id: 17, pilotName: 'DEV', pilotNumber: '21'},
-    {id: 18, pilotName: 'TSU', pilotNumber: '22'},
-    {id: 19, pilotName: 'ALB', pilotNumber: '23'},
-    {id: 20, pilotName: 'SAR', pilotNumber: '2'}
+    {id: 1, pilotName: 'Max Verstappen', pilotNumber: '33'},
+    {id: 2, pilotName: 'Sergio Perez', pilotNumber: '11'},
+    {id: 3, pilotName: 'Charles Leclerc', pilotNumber: '16'},
+    {id: 4, pilotName: 'Carlos Sainz', pilotNumber: '55'},
+    {id: 5, pilotName: 'Lewis Hamilton', pilotNumber: '44'},
+    {id: 6, pilotName: 'George Russell', pilotNumber: '63'},
+    {id: 7, pilotName: 'Esteban Ocon', pilotNumber: '31'},
+    {id: 8, pilotName: 'Peirre Gasly', pilotNumber: '10'},
+    {id: 9, pilotName: 'Oscar Piastri', pilotNumber: '28'},
+    {id: 10, pilotName: 'Lando Norris', pilotNumber: '4'},
+    {id: 11, pilotName: 'Valtteri Bottas', pilotNumber: '77'},
+    {id: 12, pilotName: 'Zhou Guanyu', pilotNumber: '24'},
+    {id: 13, pilotName: 'Lance Stroll', pilotNumber: '18'},
+    {id: 14, pilotName: 'Fernando Alonso', pilotNumber: '14'},
+    {id: 15, pilotName: 'Kevin Magnussen', pilotNumber: '20'},
+    {id: 16, pilotName: 'Nico Hulkenberg', pilotNumber: '27'},
+    {id: 17, pilotName: 'Nyck de Vries', pilotNumber: '21'},
+    {id: 18, pilotName: 'Yuki Tsunoda', pilotNumber: '22'},
+    {id: 19, pilotName: 'Alex Albon', pilotNumber: '23'},
+    {id: 20, pilotName: 'Logan Sargeant', pilotNumber: '2'}
   ])
+
+  let num = 1
 
   return (
     <Reorder.Group axis="y" values={items} onReorder={setItems} className='pilots-container'>
@@ -38,11 +40,11 @@ const Pilots = () => {
           key={item.id} 
           value={item}
           whileDrag={{
-            scale: 1.1,
+            scale: 1.2,
             boxShadow: "rgba(0,0,0,0.12) 8px 1px 3px, rgba(0,0,0,0.24) 0px 1px 2px"
           }}
         >
-          <Pilot pilot={item} />
+          <Pilot pilot={item} idx={num++} />
         </Reorder.Item>
       ))}
     </Reorder.Group>
