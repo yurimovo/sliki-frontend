@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Reorder } from 'framer-motion';
+import { Button } from 'react-bootstrap';
 
 import { Pilot } from './pilot/Pilot';
 
@@ -33,21 +34,37 @@ const Pilots = () => {
 
   let num = 1
 
+  const handleSubmit = () => {
+    console.log('Saved')
+  }
+
   return (
-    <Reorder.Group axis="y" values={items} onReorder={setItems} className='pilots-container'>
-      {items.map(item => (
-        <Reorder.Item 
-          key={item.id} 
-          value={item}
-          whileDrag={{
-            scale: 1.2,
-            boxShadow: "rgba(0,0,0,0.12) 8px 1px 3px, rgba(0,0,0,0.24) 0px 1px 2px"
-          }}
-        >
-          <Pilot pilot={item} idx={num++} />
-        </Reorder.Item>
-      ))}
-    </Reorder.Group>
+    <>
+      <Reorder.Group 
+        axis="y" 
+        values={items} 
+        onReorder={setItems}
+        layoutScroll
+        style={{ overflowY: "scroll" }}
+        className='pilots-container'
+      >
+        {items.map(item => (
+          <Reorder.Item 
+            key={item.id} 
+            value={item}
+          >
+            <Pilot pilot={item} idx={num++} />
+          </Reorder.Item>
+        ))}
+      </Reorder.Group>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12'>
+            <Button type='submit' onSubmit={handleSubmit}>Сохранить</Button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

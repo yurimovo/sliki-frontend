@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Teams from '../../cards/teams/Teams';
 import Pilots from '../../cards/pilots/Pilots';
 
 import './style.scss';
@@ -8,9 +7,8 @@ import './style.scss';
 const Race = () => {
   return (
     <>
-      <div>Race</div>
+      <div className='race-header'>Гонка</div>
       <div>
-        <Teams />
         <Pilots />
       </div>
     </>
