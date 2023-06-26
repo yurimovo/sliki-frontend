@@ -24,8 +24,8 @@ const NewForecast = () => {
             </TabList>
             <TabPanel>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
                             <SprintQualifying />
                         </div>
                     </div>
@@ -33,8 +33,8 @@ const NewForecast = () => {
             </TabPanel>
             <TabPanel>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
                             <Qualifying />
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const NewForecast = () => {
             </TabPanel>
             <TabPanel>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
                             <SprintRace />
                         </div>
                     </div>
@@ -51,8 +51,8 @@ const NewForecast = () => {
             </TabPanel>
             <TabPanel>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
                             <Race />
                         </div>
                     </div>
@@ -60,8 +60,8 @@ const NewForecast = () => {
             </TabPanel>
             <TabPanel>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
                             <Fastestlap />
                         </div>
                     </div>
@@ -69,8 +69,8 @@ const NewForecast = () => {
             </TabPanel>
             <TabPanel>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-5">
                             <PilotOfTheDay />
                         </div>
                     </div>

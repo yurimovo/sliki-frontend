@@ -58,8 +58,8 @@ const Pilots = () => {
         ))}
       </Reorder.Group>
       <div className='container'>
-        <div className='row'>
-          <div className='col-12'>
+        <div className='row d-flex justify-content-center'>
+          <div className='col-4'>
             <Button type='submit' onSubmit={handleSubmit}>Сохранить</Button>
           </div>
         </div>
