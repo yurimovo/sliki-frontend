@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import MainPage from './pages/main-page/MainPage';
 import PersonalPage from './pages/personal-page/PersonalPage';
 import Calendar from './pages/calendar-page/Calendar';

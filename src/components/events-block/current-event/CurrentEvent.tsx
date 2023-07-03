@@ -20,7 +20,7 @@ const CurrentEvent = () => {
         />
         <div className="current-event__event-content__event-date">16-18.06</div>
         <Button type="button" className="btn btn-success">
-          <Link to="/new_forecast">Сделать прогноз</Link>
+          <Link to="/new_forecast" style={{ textDecoration: "none", color: "#fff" }}>Сделать прогноз</Link>
         </Button>
       </div>
     </div>

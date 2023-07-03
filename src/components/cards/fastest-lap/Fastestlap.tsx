@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 import "./style.scss"
 import {PilotInList} from "../../../types/pilots";
@@ -27,6 +28,10 @@ const pilotsList = [
 ]
 
 const Fastestlap = () => {
+    const handleSubmit = () => {
+        console.log('Saved')
+    }
+
     return (
         <>
             <div className='fastest-lap-header'>Быстрейший круг</div>
@@ -41,6 +46,13 @@ const Fastestlap = () => {
                                 )
                             })}
                         </select>
+                    </div>
+                </div>
+            </div>
+            <div className='container'>
+                <div className='row d-flex justify-content-center'>
+                    <div className='col-4'>
+                        <Button type='submit' onSubmit={handleSubmit}>Сохранить</Button>
                     </div>
                 </div>
             </div>

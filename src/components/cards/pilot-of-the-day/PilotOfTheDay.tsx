@@ -1,4 +1,5 @@
 import React from "react"
+import { Button } from "react-bootstrap";
 
 import "./style.scss"
 
@@ -28,6 +29,10 @@ const pilotsList = [
 ]
 
 const PilotOfTheDay = () => {
+    const handleSubmit = () => {
+        console.log('Saved')
+    }
+
     return (
         <>
             <div className='day-pilot-header'>Пилот дня</div>
@@ -42,6 +47,13 @@ const PilotOfTheDay = () => {
                                 )
                             })}
                         </select>
+                    </div>
+                </div>
+            </div>
+            <div className='container'>
+                <div className='row d-flex justify-content-center'>
+                    <div className='col-4'>
+                        <Button type='submit' onSubmit={handleSubmit}>Сохранить</Button>
                     </div>
                 </div>
             </div>

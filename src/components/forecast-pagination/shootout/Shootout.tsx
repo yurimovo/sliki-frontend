@@ -4,10 +4,10 @@ import "./style.scss"
 
 import Pilots from "../../cards/pilots/Pilots"
 
-const SprintQualifying = () => {
+const Shootout = () => {
     return (
         <>
-            <div className='sprint-qualify-header'>Спринт-квалификация</div>
+            <div className='sprint-qualify-header'>Шутаут</div>
             <div>
                 <Pilots />
             </div>
@@ -15,4 +15,4 @@ const SprintQualifying = () => {
     )
 }
 
-export default SprintQualifying
+export default Shootout
