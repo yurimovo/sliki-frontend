@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Reorder } from 'framer-motion';
 import { Button } from 'react-bootstrap';
 
@@ -7,8 +7,10 @@ import { Pilot } from './pilot/Pilot';
 import { PilotInList } from '../../../types/pilots';
 
 import './style.scss';
+import { observer } from 'mobx-react';
+import { forecastStore } from '../../../store/pilots';
 
-const Pilots = () => {
+const Pilots = observer(() => {
   const [items, setItems] = useState<Array<PilotInList>>([
     {id: 1, pilotName: 'Max Verstappen', pilotNumber: '33'},
     {id: 2, pilotName: 'Sergio Perez', pilotNumber: '11'},
@@ -38,6 +40,19 @@ const Pilots = () => {
     console.log('Saved')
   }
 
+  useEffect(() => {
+    forecastStore.refreshQualPilots(items)
+  },[items])
+
+  useEffect(() => {
+    setItems(forecastStore.qualPilots)
+  },[])
+
+  /* useEffect(() => {
+    const qualPilots = JSON.parse(localStorage.getItem('qualPilots'))
+    setItems(JSON.parse(localStorage.getItem('qualPilots')))
+  }) */
+
   return (
     <>
       <Reorder.Group 
@@ -66,6 +81,6 @@ const Pilots = () => {
       </div>
     </>
   );
-};
+});
 
 export default Pilots;

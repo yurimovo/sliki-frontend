@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { injectStores } from '@mobx-devtools/tools';
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
@@ -9,6 +10,13 @@ import Calendar from './pages/calendar-page/Calendar';
 import NewForecast from './pages/new-forecast/NewForecast';
 
 import './main-container.scss';
+import forecastStore from './store/pilots';
+
+/* const store = new forecastStore()
+
+injectStores({
+  store
+}) */
 
 function App() {
   return (
