@@ -8,7 +8,7 @@ import { PilotInList } from '../../../types/pilots';
 
 import './style.scss';
 import { observer } from 'mobx-react';
-import { forecastStore } from '../../../store/pilots';
+import  forecastStore  from '../../../store/pilots';
 
 const Pilots = observer(() => {
   const [items, setItems] = useState<Array<PilotInList>>([
@@ -47,11 +47,6 @@ const Pilots = observer(() => {
   useEffect(() => {
     setItems(forecastStore.qualPilots)
   },[])
-
-  /* useEffect(() => {
-    const qualPilots = JSON.parse(localStorage.getItem('qualPilots'))
-    setItems(JSON.parse(localStorage.getItem('qualPilots')))
-  }) */
 
   return (
     <>
